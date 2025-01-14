@@ -43,8 +43,17 @@ springdoc:
 # cors 설정
 cors:
   allowed:
+    - https://pintech.koreait.xyz
     - https://koreit.xyz
     - https://mtra.koreait.xyz
+    - https://mtra-service.koreait.xyz
+    - https://localhost:3000
+    - https://localhost:3999
+  front:
+    - https://pintech.koreait.xyz
+    - https://koreit.xyz
+    - https://mtra.koreait.xyz
+    - https://mtra-service.koreait.xyz
     - https://mtra-service.koreait.xyz
     - https://localhost:3000
     - https://localhost:3999
