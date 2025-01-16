@@ -50,10 +50,22 @@ cors:
     - https://localhost:3000
     - https://localhost:3999
   front:
-    - https://pintech.koreait.xyz
-    - https://koreit.xyz
-    - https://mtra.koreait.xyz
-    - https://mtra-service.koreait.xyz
-    - https://mtra-service.koreait.xyz
-    - https://localhost:3000
-    - https://localhost:3999
+    domain:
+      - https://pintech.koreait.xyz
+      - https://koreit.xyz
+      - https://mtra.koreait.xyz
+      - https://mtra-service.koreait.xyz
+      - https://mtra-service.koreait.xyz
+      - https://localhost:3000
+      - https://localhost:3999
+
+
+
+eureka:
+  instance:
+    hostname: ${hostname}
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: ${eureka.server}/eureka
